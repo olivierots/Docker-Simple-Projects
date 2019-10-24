@@ -1,0 +1,22 @@
+version: '3'
+services:
+  jenkins:
+    container_name: jenkins
+    image: jenkins/jenkins
+    ports:
+      - "8080:8080"
+    volumes:
+      - "$PWD/jenkins_home:/var/jenkins_home"
+    networks:
+      - net
+  remote_host: 
+    container_name: centos
+    image: remote-host-image
+    build:
+      context: /home/centoscontainer
+    networks:
+      - net
+
+networks:
+  net:
+
