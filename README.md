@@ -2,18 +2,18 @@
 Built a centos server using docker compose and installed Jenkins to run inside the container
 
 ## docker instalation on centos ##
-sudo yum install docker-ce
-sudo systemctl start docker
-sudo systemctl status docker
-sudo systemctl enable docker
-sudo usermod -aG docker <your_user_id>
+*sudo yum install docker-ce
+*sudo systemctl start docker
+*sudo systemctl status docker
+*sudo systemctl enable docker
+*sudo usermod -aG docker <your_user_id>
 
 ## useful commands i've used throughout my learning experience ##
-docker-compose up -d ==> start the docker container in the background
-docker info | grep -i root ==> where docker is saving its files
-docker logs -f <container> ==> check your container's logs 
-docker-compose stop ==> stop the service
-docker-compose restart <container> ==> restart the container
+*docker-compose up -d ==> start the docker container in the background
+*docker info | grep -i root ==> where docker is saving its files
+*docker logs -f <container> ==> check your container's logs 
+*docker-compose stop ==> stop the service
+*docker-compose restart <container> ==> restart the container
 docker-compose down ==> delete the service but it wont delelte the volume
 docker-compose up -d  ==> the service will be re-created using files in the volume
 docker exec -ti <container> bash ==> ssh into the container/work inside the container
