@@ -9,6 +9,7 @@ Built a centos server using docker compose and installed Jenkins to run inside t
 * sudo usermod -aG docker <your_user_id>
 
 ## useful commands i've used throughout my learning experience ##
+```
 * docker-compose up -d ==> start the docker container in the background
 * docker info | grep -i root ==> where docker is saving its files
 * docker logs -f <container> ==> check your container's logs 
@@ -40,3 +41,4 @@ Built a centos server using docker compose and installed Jenkins to run inside t
 * docker-compose top ==> view the processes running within each service container.
 * docker-compose pull <service> ==> pulls an image associated with a service defined in a docker-compose.yml
 * docker-compose restart <service> ==> restarts all stopped and running services.
+```
