@@ -2,10 +2,10 @@
 ```
 Built a centos server using docker compose and installed Jenkins using docker
 ```
-## Whats docker compose & docker ? ##
+## What is docker compose & docker ? ##
 ```
-light weight tool for defining and running multi-container Docker applications, for running multiple containerized apps in a single machine.
-Docker is a tool designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and deploy it as one package  
+Docker is a tool designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and deploy it as one package whereas docker-compose is a light weight tool for defining and running multi-container Docker containerized apps in a single machine.
+
 ```
 ## docker & docker-compose instalation on centos ##
 ```
