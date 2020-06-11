@@ -1,6 +1,6 @@
 ## Jenkins_Docker Project 2019 ##
 ```
-Built a centos server using docker compose and installed Jenkins to run inside the container
+Built a centos server using docker compose and installed Jenkins using docker
 ```
 
 ## docker & docker-compose instalation on centos ##
@@ -11,11 +11,13 @@ Built a centos server using docker compose and installed Jenkins to run inside t
 * sudo systemctl enable docker
 * sudo usermod -aG docker <your_user_id>
 * docker-compose: https://docs.docker.com/compose/install/
+* Jenkins docker image: https://hub.docker.com/_/jenkins/
 ```
 ## useful commands i've used throughout my learning experience ##
 ```
 * docker-compose up -d ==> start the docker container in the background
 * docker info | grep -i root ==> where docker is saving its files
+* sudo du -sh /var/lib/docker ==> how much space docker uses on your machine
 * docker logs -f <container> ==> check your container's logs 
 * docker-compose stop ==> stop the service
 * docker-compose restart <container> ==> restart the container
