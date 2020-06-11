@@ -3,13 +3,14 @@
 Built a centos server using docker compose and installed Jenkins to run inside the container
 ```
 
-## docker instalation on centos ##
+## docker & docker-compose instalation on centos ##
 ```
 * sudo yum install docker-ce
 * sudo systemctl start docker
 * sudo systemctl status docker
 * sudo systemctl enable docker
 * sudo usermod -aG docker <your_user_id>
+* docker-compose: https://docs.docker.com/compose/install/
 ```
 ## useful commands i've used throughout my learning experience ##
 ```
