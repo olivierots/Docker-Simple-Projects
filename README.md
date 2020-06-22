@@ -1,3 +1,5 @@
+=============
+
 ## Jenkins_Docker Project 2019 ##
 ```
 Built a centos server using docker compose and installed Jenkins using docker
@@ -19,6 +21,10 @@ apps in a single machine.
                 are  much smaller than virtual machines, are faster to create, and quicker to start. Less overhead.      
 * agility: enables faster software delivery cycles as Docker works well as part of CI pipelines with tools 
            like Travis, Jenkins and therefore better application development.
+* Docker Hub: For common or simple use cases, such as a LAMP stack, the ability to save images and push them to Docker
+              Hub means that there are already many well-maintained images available. Being able to quickly pull a premade
+              image or build from an officially-maintained Dockerfile can make this kind of setup process extremely 
+              fast and simple           
 ```
 ## docker & docker-compose instalation on centos ##
 ```
