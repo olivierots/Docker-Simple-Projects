@@ -17,10 +17,13 @@ apps in a single machine.
 ```
 * Portability: you can deploy it to any other system where Docker is running and you can be sure that your
                application will perform exactly as it did when you tested it.
+               
 * Performance:  the fact that containers do not contain an OS (whereas virtual machines do) means that containers 
-                are  much smaller than virtual machines, are faster to create, and quicker to start. Less overhead.      
-* agility: enables faster software delivery cycles as Docker works well as part of CI pipelines with tools 
+                are  much smaller than virtual machines, are faster to create, and quicker to start. Less overhead.
+                
+* Agility: enables faster software delivery cycles as Docker works well as part of CI pipelines with tools 
            like Travis, Jenkins and therefore better application development.
+           
 * Docker Hub: For common or simple use cases, such as a LAMP stack, the ability to save images and push them to Docker
               Hub means that there are already many well-maintained images available. Being able to quickly pull a premade
               image or build from an officially-maintained Dockerfile can make this kind of setup process extremely 
