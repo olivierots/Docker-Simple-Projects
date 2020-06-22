@@ -62,9 +62,8 @@ apps in a single machine.
 * docker-compose stop
 * docker-compose pause <service> ==> pauses running containers of a service. They can be unpaused with docker-compose unpause
 * docker-compose unpause
-* docker-compose up: see all of the docker containers currently running
-* docker-compose up: start the docker container
-* docker-compose down: remove all docker containers in the repository
+* docker-compose up ==>  start the docker container
+* docker-compose down ==>  remove all docker containers in the repository
 * docker kill :container_id ==> remove a specific docker container
 * docker-compose config ==> verify that the Compose file format is correct. If it is correct, the configuration is displayed. If the 
   format is incorrect, the cause of the error is displayed.
