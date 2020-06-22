@@ -4,10 +4,21 @@ Built a centos server using docker compose and installed Jenkins using docker
 ```
 ## What is docker compose & docker ? ##
 ```
-Docker is a tool designed to make it easier to create, deploy, and run applications by using containers.
+Docker is a tool designed to make it easier to create, deploy, and run applications by using containers from
+a localhost to an on-premises data center and even the cloud.
 Containers allow a developer to package up an application with all of the parts it needs, such as libraries
-and other dependencies, and deploy it as one package whereas docker-compose is a light weight tool for 
-defining and running multi-container Docker containerized apps in a single machine.
+and other dependencies (both from the underlying OS and from other containers) and deploy it as one package
+whereas docker-compose is a light weight tool for defining and running multi-container Docker containerized
+apps in a single machine.
+```
+## some of the benefits of using docker ##
+```
+* Portability: you can deploy it to any other system where Docker is running and you can be sure that your
+               application will perform exactly as it did when you tested it.
+* Performance:  the fact that containers do not contain an OS (whereas virtual machines do) means that containers 
+                are  much smaller than virtual machines, are faster to create, and quicker to start. Less overhead.      
+* agility: enables faster software delivery cycles as Docker works well as part of CI pipelines with tools 
+           like Travis, Jenkins and therefore better application development.
 ```
 ## docker & docker-compose instalation on centos ##
 ```
