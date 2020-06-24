@@ -12,14 +12,17 @@ Containers allow a developer to package up an application with all of the parts 
 and other dependencies (both from the underlying OS and from other containers) and deploy it as one package
 whereas docker-compose is a light weight tool for defining and running multi-container Docker containerized
 apps in a single machine.
+Docker containers virtualizes the OS kernel and not the actual HW
 ```
 ## some of the benefits of using docker ##
 ```
-* Portability: you can deploy it to any other system where Docker is running and you can be sure that your
-               application will perform exactly as it did when you tested it.
+* Portability: you can deploy it to any other system regardless of what they're running on as long as the is a
+               docker daemon running and you can be sure that your application will perform exactly as it did 
+               when you tested it; this makes testing & dubbuging easier. 
                
 * Performance:  the fact that containers do not contain an OS (whereas virtual machines do) means that containers 
-                are  much smaller than virtual machines, are faster to create, and quicker to start. Less overhead.
+                are  much smaller than virtual machines, are faster to create, quicker to start, you can run more
+                of them, they're easier to distribute and modify. Less overhead.
                 
 * Agility: enables faster software delivery cycles as Docker works well as part of CI pipelines with tools 
            like Travis, Jenkins and therefore better application development.
@@ -27,8 +30,12 @@ apps in a single machine.
 * Docker Hub: For common or simple use cases, such as a LAMP stack, the ability to save images and push them to Docker
               Hub means that there are already many well-maintained images available. Being able to quickly pull a premade
               image or build from an officially-maintained Dockerfile can make this kind of setup process extremely 
-              fast and simple           
+              fast and simple 
+
+using docker means we dont have to worry about package management or compiling codes on our machines, which will
+or might be different from the machine our apps runs on, this saves time and make dev. process more reliable. 
 ```
+
 ## docker & docker-compose instalation on centos ##
 ```
 * sudo yum install docker-ce
