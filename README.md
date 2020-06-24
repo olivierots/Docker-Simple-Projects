@@ -2,7 +2,7 @@
 
 ## Jenkins_Docker Project 2019 ##
 ```
-Built a centos server using docker compose and installed Jenkins using docker
+Built a centos server, create a user a remote_user, configured ssh & installed MySQL using docker.
 ```
 ## What is docker compose & docker ? ##
 ```
