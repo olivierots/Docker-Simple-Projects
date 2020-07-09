@@ -124,6 +124,22 @@ or might be different from the machine our apps runs on, this saves time and mak
 * docker-compose top ==> view the processes running within each service container.
 * docker-compose pull <service> ==> pulls an image associated with a service defined in a docker-compose.yml
 * docker-compose restart <service> ==> restarts all stopped and running services.
+
+=== Other useful things i've learnt 
+* how can you reduce an image size to save disk space ? by reducing the No of layers, using multistage image & use import + export 
+* COPY vs ADD: they both server the same purpose except that ADD support remote url & tar uncompressed files, it extract the 
+  content & copy it to your image .
+* RUN execute when building an image , to install your dependencies etc.
+* CMD & ENTRYPOINT: execute when the container start
+* export vs import ==> useful to reduce the image size & save disk space
+  docker container export <container-id> > ./export.tar ==> export as a tarball without the image history
+  cat export.tar | docker import - <image_name:tag> ==> import the image call it <image_name:tag> (there will be no layer history 
+  which reduces the image size).
+
+
+  
+
+
 ```
 
 
