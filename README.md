@@ -68,24 +68,31 @@ or might be different from the machine our apps runs on, this saves time and mak
 * docker-compose: https://docs.docker.com/compose/install/
 * Jenkins docker image: https://hub.docker.com/_/jenkins/
 ```
-## useful docker commands i've learnt ##
+
 ```
+## useful docker commands i've learnt ##
 === Docker images management
-*
-*
-*
-*
-*
-*
-*
-*
-*
-
-
-
+* docker build . -t <image-name:tag-number> ==> build & tag your image 
+* docker run -p 8080:80 <image-name:tag-number> ==> expose a port, port 80 is for the container & port 8080 for the local server
+* docker image rm <id> ==> delete an image 
+* docker rmi -f <image_id> ==> Forces removal of image even if it is referenced in multiple repositories.
+* docker rm $(docker ps -a -q) ==> remove all images
+* docker images ==> list your images, images_ids, size, date they were created, tag & repo
+* docker build -f Dockerfile.prod . ==> build an image when it has a different name
+  docker build --file="mydockerfile" . -t <image-name:tag-number>
+* docker build https://github.com/xxx.git ==> build a docker image directly from a github repo url 
+* docker container run -d -p 8080:80 --name=<chosen_name_for_your_container> <image> ==> give docker a cont. a name 
+* docker container exec -it <contrainer_id> /bin/bash ==> exec into a container 
+* docker login ==> login to your docker-hub ==> log in docker-hub, push, pull images to & from it. 
+  docker tag <image_name> docker_hub_username/<repo_name:tag>
+  docker image push <repo_name:tag>
+  docker image push <repo_name:tag>
+  docker image pull <repo_name:tag>
+* docker image history <image-name:tag-number> ==> show your image's layers (useful to reduce images size)
+  docker image inspect <image-name:tag-number>
 
 === Docker-compose management
-* docker-compose up -d ==> start the docker container in the background
+* docker-compose up -d ==> start the docker container in the background (detached mode)
 * docker info | grep -i root ==> where docker is saving its files
 * sudo du -sh /var/lib/docker ==> how much space docker uses on your machine
 * docker logs -f <container> ==> check your container's logs 
@@ -96,16 +103,15 @@ or might be different from the machine our apps runs on, this saves time and mak
 * docker exec -ti <container> bash ==> ssh into the container/work inside the container
 * docker cp script.sh <container>:/path/script.sh ==> copy the script file from your machine to container & specify the location
 * docker-compose build ==> Under the project directory,  run docker-compose build to build (rebuild) the service.
-* docker images ==> list your docker images
 * docker cp remote-key <container>:/tmp/remote-key ==> copy keys to the container to allow passwordless ssh
-* ssh -i /tmp/remote-key remote_user@hostname> ==> ssh into the container 
+* ssh -i /tmp/remote-key remote_user@hostname> ==> ssh into the container using your keys
 * docker rm -fv <container-name> ==> delelte a container
 * docker cp table.j2 web:/var/www/html/index.php ==> copy that file to the container
 * docker ps ==> list your running containers
 * docker-compose start <service> ==> starts an existing service container.
-* docker-compose stop
+  docker-compose stop
 * docker-compose pause <service> ==> pauses running containers of a service. They can be unpaused with docker-compose unpause
-* docker-compose unpause
+  docker-compose unpause
 * docker-compose up ==>  start the docker container
 * docker-compose down ==>  remove all docker containers in the repository
 * docker kill :container_id ==> remove a specific docker container
@@ -118,4 +124,4 @@ or might be different from the machine our apps runs on, this saves time and mak
 * docker-compose restart <service> ==> restarts all stopped and running services.
 ```
 
-ref: https://warp-9.com/courses/enrolled/892658
+
