@@ -18,8 +18,10 @@ GOAL: create a web server
 7. runs port 80 is open
 
 ```
-## What is docker compose & docker ? ##
+
 ```
+## What is docker compose & docker ? ##
+===
 Docker is a tool designed to make it easier to create, deploy, and run applications by using containers from
 a localhost to an on-premises data center and even the cloud.
 Containers allow a developer to package up an application with all of the parts it needs, such as libraries
@@ -27,6 +29,12 @@ and other dependencies (both from the underlying OS and from other containers) a
 whereas docker-compose is a light weight tool for defining and running multi-container Docker containerized
 apps in a single machine.
 Docker containers virtualizes the OS kernel and not the actual HW
+===
+## Difference between an image vs container ? ##
+an image is a set of instructions used to create the desired environemnt we desire, we start with a base image
+and build the app server on top of it whereas a container is a running instance of that image
+when we deploy a docker image to any env. it becomes a container.    
+
 ```
 ## some of the benefits of using docker ##
 ```
@@ -109,3 +117,5 @@ or might be different from the machine our apps runs on, this saves time and mak
 * docker-compose pull <service> ==> pulls an image associated with a service defined in a docker-compose.yml
 * docker-compose restart <service> ==> restarts all stopped and running services.
 ```
+
+ref: https://warp-9.com/courses/enrolled/892658
