@@ -2,7 +2,21 @@
 
 ## Jenkins_Docker Project 2019 ##
 ```
-Built a centos server, created a remote_user, configured ssh & installed MySQL using a dockerfile & docker-compose.
+Challenge 1:
+GOAL: create a Linux centos server
+Built a centos server, created a remote_user, configured ssh & installed MySQL 
+using a dockerfile & docker-compose.
+
+Challenge 2:
+GOAL: create a web server
+1. use a centos base image
+2. install the web server (httpd)
+3. copy the tar file & extract in the relvant path: /var/www/html
+4. start the web server 
+5. pass the parameters: "-D" and "FOREGROUND"
+6. call the image challenge: challenge:1
+7. runs port 80 is open
+
 ```
 ## What is docker compose & docker ? ##
 ```
@@ -48,6 +62,21 @@ or might be different from the machine our apps runs on, this saves time and mak
 ```
 ## useful docker commands i've learnt ##
 ```
+=== Docker images management
+*
+*
+*
+*
+*
+*
+*
+*
+*
+
+
+
+
+=== Docker-compose management
 * docker-compose up -d ==> start the docker container in the background
 * docker info | grep -i root ==> where docker is saving its files
 * sudo du -sh /var/lib/docker ==> how much space docker uses on your machine
