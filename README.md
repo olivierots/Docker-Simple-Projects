@@ -46,7 +46,7 @@ or might be different from the machine our apps runs on, this saves time and mak
 * docker-compose: https://docs.docker.com/compose/install/
 * Jenkins docker image: https://hub.docker.com/_/jenkins/
 ```
-## useful commands i've used throughout my learning experience ##
+## useful docker commands i've learnt ##
 ```
 * docker-compose up -d ==> start the docker container in the background
 * docker info | grep -i root ==> where docker is saving its files
