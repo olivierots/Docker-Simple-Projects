@@ -1,6 +1,6 @@
 =============
 
-## Docker Project 2019 / 2020 ##
+## Docker course ##
 ```
 Challenge 1:
 GOAL: create a Linux centos server
