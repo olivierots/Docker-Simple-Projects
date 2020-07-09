@@ -1,6 +1,6 @@
 =============
 
-## Jenkins_Docker Project 2019 ##
+## Docker Project 2019 / 2020 ##
 ```
 Challenge 1:
 GOAL: create a Linux centos server
