@@ -36,8 +36,9 @@ and build the app server on top of it whereas a container is a running instance 
 when we deploy a docker image to any env. it becomes a container.    
 
 ```
-## some of the benefits of using docker ##
+
 ```
+## some of the benefits of using docker ##
 * Portability: you can deploy it to any other system regardless of what they're running on as long as the is a
                docker daemon running and you can be sure that your application will perform exactly as it did 
                when you tested it; this makes testing & dubbuging easier. 
@@ -58,8 +59,9 @@ using docker means we dont have to worry about package management or compiling c
 or might be different from the machine our apps runs on, this saves time and make dev. process more reliable. 
 ```
 
-## docker & docker-compose instalation on centos ##
+
 ```
+## docker & docker-compose instalation on centos ##
 * sudo yum install docker-ce
 * sudo systemctl start docker
 * sudo systemctl status docker
