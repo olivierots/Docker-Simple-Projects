@@ -73,6 +73,7 @@ or might be different from the machine our apps runs on, this saves time and mak
 
 ```
 ## useful docker commands i've learnt ##
+
 === Docker images management
 * docker build . -t <image-name:tag-number> ==> build & tag your image 
 * docker run -p 8080:80 <image-name:tag-number> ==> expose a port, port 80 is for the container & port 8080 for the local server
