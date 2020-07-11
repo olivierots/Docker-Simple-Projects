@@ -92,7 +92,16 @@ or might be different from the machine our apps runs on, this saves time and mak
   docker image pull <repo_name:tag>
 * docker image history <image-name:tag-number> ==> show your image's layers (useful to reduce images size)
   docker image inspect <image-name:tag-number>
-
+* List all Docker Resources
+  docker container ls, docker volume ls, docker network ls, docker info
+* docker container stop [container_id] ==> stop a specific container
+* docker container stop $(docker container ls –aq) ==> stop all containers 
+* docker container rm [container_id]: remove a stopped container
+* docker container rm $(docker container ls –aq): remove all stopped containers
+* docker volume rm VolumeName ==> remove a volume
+* docker network rm [networkID] ==> remove a network 
+* docker system prune ==> rmeove all unused objects or the below
+* docker container prune, docker image prune, docker volume prune & docker network prune
 === Docker-compose management
 * docker-compose up -d ==> start the docker container in the background (detached mode)
 * docker info | grep -i root ==> where docker is saving its files
