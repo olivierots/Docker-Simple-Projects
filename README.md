@@ -102,6 +102,7 @@ or might be different from the machine our apps runs on, this saves time and mak
 * docker network rm [networkID] ==> remove a network 
 * docker system prune ==> rmeove all unused objects or the below
 * docker container prune, docker image prune, docker volume prune & docker network prune
+
 === Docker-compose management
 * docker-compose up -d ==> start the docker container in the background (detached mode)
 * docker info | grep -i root ==> where docker is saving its files
