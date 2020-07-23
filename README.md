@@ -38,7 +38,7 @@ when we deploy a docker image to any env. it becomes a container.
 ```
 
 ```
-## some of the benefits of using docker ##
+=====  some of the benefits of using docker ===== 
 * Portability: you can deploy it to any other system regardless of what they're running on as long as the is a
                docker daemon running and you can be sure that your application will perform exactly as it did 
                when you tested it; this makes testing & dubbuging easier. 
@@ -61,7 +61,7 @@ or might be different from the machine our apps runs on, this saves time and mak
 
 
 ```
-## docker & docker-compose instalation on centos ##
+=====  docker & docker-compose instalation on centos ===== 
 * sudo yum install docker-ce
 * sudo systemctl start docker
 * sudo systemctl status docker
@@ -72,9 +72,9 @@ or might be different from the machine our apps runs on, this saves time and mak
 ```
 
 ```
-## useful docker commands i've learnt ##
+===== useful docker commands i've learnt ===== 
 
-=== Docker images management
+=== Docker images management ===
 * docker build . -t <image-name:tag-number> ==> build & tag your image 
 * docker run -p 8080:80 <image-name:tag-number> ==> expose a port, port 80 is for the container & port 8080 for the local server
 * docker image rm <id> ==> delete an image 
@@ -104,7 +104,7 @@ or might be different from the machine our apps runs on, this saves time and mak
 * docker system prune ==> rmeove all unused objects or the below
 * docker container prune, docker image prune, docker volume prune & docker network prune
 
-=== Docker-compose management
+=== Docker-compose management ===
 * docker-compose up -d ==> start the docker container in the background (detached mode)
 * docker info | grep -i root ==> where docker is saving its files
 * sudo du -sh /var/lib/docker ==> how much space docker uses on your machine
@@ -136,7 +136,7 @@ or might be different from the machine our apps runs on, this saves time and mak
 * docker-compose pull <service> ==> pulls an image associated with a service defined in a docker-compose.yml
 * docker-compose restart <service> ==> restarts all stopped and running services.
 
-=== Other useful things i've learnt 
+=== Other useful things i've learnt ===
 * how can you reduce an image size to save disk space ? by reducing the No of layers, using multistage image & use import + export 
 * COPY vs ADD: they both server the same purpose except that ADD support remote url & tar uncompressed files, it extract the 
   content & copy it to your image .
