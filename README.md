@@ -103,6 +103,8 @@ or might be different from the machine our apps runs on, this saves time and mak
 * docker network rm [networkID] ==> remove a network 
 * docker system prune ==> rmeove all unused objects or the below
 * docker container prune, docker image prune, docker volume prune & docker network prune
+* docker inspect <container_name> ==> detailed info about the container inc. network settings etc. 
+* docker volume inspect <volume_name>
 
 === Docker-compose management ===
 * docker-compose up -d ==> start the docker container in the background (detached mode)
