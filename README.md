@@ -150,7 +150,7 @@ or might be different from the machine our apps runs on, this saves time and mak
   which reduces the image size).
 
 
-  
+ Good article :) https://medium.com/better-programming/the-essential-docker-dockerfile-and-docker-compose-cheat-sheet-8bf1c42876c1
 
 
 ```
