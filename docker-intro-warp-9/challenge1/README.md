@@ -11,7 +11,7 @@ GOAL: create a web server
 7. runs port 80 is open
 
 
-own notes:
+# own notes:
 The CMD is passing in parameters. In this case we don’t want the service/process running in the background.
 To breakdown ENTRYPOINT vs CMD:
 ENTRYPOINT is the command you want to run.
