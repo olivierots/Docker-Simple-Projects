@@ -1,6 +1,5 @@
 =============
-
-## Docker course ##
+## Learning Docker & Containerisation in General ##
 ```
 Challenge 1:
 GOAL: create a Linux centos server
